@@ -19,7 +19,8 @@ dclike.panel<-function(indata, ainv, amat, evalues, ncov, nstage)
 				as.matrix(evalues),
 				as.integer(nstage),
 				as.integer(ncov),
-				as.integer(tdata$len))
+				as.integer(tdata$len),
+				PACKAGE = "panel")
 			like <- like + likefun$like
 		}
 	}

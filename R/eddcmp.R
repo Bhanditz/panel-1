@@ -20,7 +20,8 @@ eddcmp<-function(inmat)
 		as.integer(n),
 		as.vector(tivec),
 		as.vector(trvec),
-		as.integer(ierr))
+		as.integer(ierr),
+		PACKAGE = "panel")
 	if(z[[8]]!=0)
 		warning("maximum number of iterations exceeded in fortran")
 	if(max(abs(z[[4]]))!=0)

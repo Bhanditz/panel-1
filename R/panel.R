@@ -41,7 +41,8 @@ verbose = F, tol = 0.001)
 				  as.vector(gamma),
 				  as.integer(ncov),
 				  as.integer(npar),
-				  as.integer(nstage))
+				  as.integer(nstage),
+				  PACKAGE = "panel")
 				score <- tcmp$score
 				info <- tcmp$info
 			}
