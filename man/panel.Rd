@@ -48,6 +48,8 @@ intensity matrices with respect to each of the parameters.
 \item{verbose}{
 If verbose is set to TRUE then on each iteration the current estimate of theta
 and the current value of the score function are printed out.
+}
+\item{tol}{ The tolerance used to determine convergence.
 }}
 \value{
 panel returns a list with the parameter estimates, their standard errors

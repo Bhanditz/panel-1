@@ -19,9 +19,11 @@ stage: the stage the individual is in at each inspection times
 cov: the value of the covariate for that individual at the inspection time
 len: the number of inspections for that individual
 }
-\item{ainv,}{
-intensity matrices.
+\item{ainv}{
+The inverse of the intensity matrix.
 }
+\item{amat}{ The intensity matrix.}
+\item{evalues}{The eigenvalues.}
 \item{ncov}{
 The number of levels the covariate comes at.
 }
