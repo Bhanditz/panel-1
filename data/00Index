@@ -1,8 +1,2 @@
-dclike.panel             A function to compute the value of the log
-                         likelihood for a given set of panel data and a
-                         given value of the parameters.
-kldata                   The data set given in Kalbfleisch and Lawless
-                         (1985).
-panel                    A function to compute the maximum likelihood
-                         estimates of the transition parameters from
-                         panel data.
+kldata                  The data set given in Kalbfleisch and Lawless
+                        (1985).

@@ -41,5 +41,5 @@ panel, eddcmp
 }
 \examples{
 }
-\keywords{utilities}
+\keyword{utilities}
 

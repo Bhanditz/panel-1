@@ -72,11 +72,4 @@ eddcmp, dclike.panel
 #See the accompanying document "A Users Guide to panel" for
 #examples and code segments.
 }
-\keywords{model}
-
-
-
-
-
-
-
+\keyword{models}
