@@ -1,0 +1,24 @@
+      SUBROUTINE COMPLIKE(TIME,STAGE,COV,LIKE,AMAT,AINV,EVALS,NSTAGE,
+     c          NCOV,LEN)
+       INTEGER LEN,NSTAGE,STAGE(LEN),CT1,NCOV,COV(LEN),INDEX
+       REAL*8 AMAT(NCOV,NSTAGE,NSTAGE),AINV(NCOV,NSTAGE,NSTAGE)
+       REAL*8 EVALS(NCOV,NSTAGE),TMP,EEVS(50),LIKE,T1,TIME(LEN)
+C Copyright 1994 Robert Gentleman 
+       LIKE=0
+       DO 100 I=1,(LEN-1)
+        INDEX=COV(I)
+C INDEX tells us which of the covariates affects the transition rates and 
+C hence which of the pmats we should be grabbing for this step
+        T1 = TIME(I+1)-TIME(I)
+        IND1 = STAGE(I)
+        IND2 = STAGE(I+1)
+        DO 131 J=1,NSTAGE
+ 131        EEVS(J)=DEXP(T1*EVALS(INDEX,J))
+        TMP=0.0
+        DO 102 CT1=1,NSTAGE
+ 102     TMP=TMP+EEVS(CT1)*AMAT(INDEX,IND1,CT1)*AINV(INDEX,CT1,IND2)
+C TMP CONTAINS THE PROBABILITY OF GOING FROM STAGE IND1 TO IND2 IN TIME T1
+        LIKE=LIKE+DLOG(TMP)
+ 100   CONTINUE
+       RETURN
+       END

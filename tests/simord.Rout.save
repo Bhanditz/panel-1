@@ -1,0 +1,61 @@
+
+R : Copyright 2001, The R Development Core Team
+Version 1.3.0 Under development (unstable) (2001-05-18)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type `license()' or `licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type `contributors()' for more information.
+
+Type `demo()' for some demos, `help()' for on-line help, or
+`help.start()' for a HTML browser interface to help.
+Type `q()' to quit R.
+
+>  library(panel)
+Warning message: 
+package `panel' found more than once,
+using the one found in `/home/rgentlem/Software/panel.Rcheck' in: .find.package(package, lib.loc, quiet = TRUE) 
+>  sim.ord<-source("simord.dat")[[1]]
+>  source("simfuns")
+>  sim.fit<-panel(sim.ord, qfun.ord, gamma.ord, qderiv.ord, 7, 4, 3, T)
+Iteration[1] 1
+gamma
+[1] -5.00 -5.70 -6.50 -9.60 -5.40 -6.61  0.50
+score at end of iteration
+[1] -20.13352484  18.70572814   1.56384166  -0.07311733  -3.55924598
+[6]  -1.45654637 -39.34370409
+[1] "Log Likelihood  -598.498970724298  stepsize  1"
+Iteration[1] 2
+gamma
+[1] -4.8516331 -5.4572813 -6.4823781 -9.4975483 -5.5336685 -6.7762877  0.2895237
+score at end of iteration
+[1]  1.74748636 -1.76118302  0.10723331 -0.01076729 -0.09874919 -0.08410205
+[7]  2.55382729
+[1] "Log Likelihood  -598.473403274925  stepsize  1"
+Iteration[1] 3
+gamma
+[1] -4.8545720 -5.4761179 -6.4821218 -9.4987144 -5.5372772 -6.7861151  0.2980093
+score at end of iteration
+[1]  0.0030699890 -0.0134628298 -0.0003520175  0.0004147058 -0.0006140627
+[6] -0.0008686694  0.0042615396
+[1] "Log Likelihood  -598.473401533745  stepsize  1"
+Iteration[1] 4
+gamma
+[1] -4.8546564 -5.4763642 -6.4821615 -9.4982122 -5.5373085 -6.7863016  0.2980100
+score at end of iteration
+[1]  5.000489e-05 -6.533757e-06 -3.368891e-05  3.028941e-05  6.978075e-06
+[6] -2.907814e-05  1.163486e-04
+ 
+Results at convergence
+----------------------
+Log Likelihood[1] -598.4734
+gamma
+[1] -4.8546564 -5.4763642 -6.4821615 -9.4982122 -5.5373085 -6.7863016  0.2980100
+Score
+[1]  5.000489e-05 -6.533757e-06 -3.368891e-05  3.028941e-05  6.978075e-06
+[6] -2.907814e-05  1.163486e-04
+stderr(gamma)
+[1] 0.1529908 0.1429414 0.1625809 0.9406118 0.2140201 0.3822893 0.1099664
+> 

@@ -1,0 +1,78 @@
+
+R : Copyright 2001, The R Development Core Team
+Version 1.3.0 Under development (unstable) (2001-05-18)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type `license()' or `licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type `contributors()' for more information.
+
+Type `demo()' for some demos, `help()' for on-line help, or
+`help.start()' for a HTML browser interface to help.
+Type `q()' to quit R.
+
+> # test the data set given in Kalbfleisch and Lawless
+>  library(panel)
+Warning message: 
+package `panel' found more than once,
+using the one found in `/home/rgentlem/Software/panel.Rcheck' in: .find.package(package, lib.loc, quiet = TRUE) 
+>  data(kldata)
+Warning message: 
+package `panel' found more than once,
+using the one found in `/home/rgentlem/Software/panel.Rcheck' in: .find.package(package, lib.loc, quiet = TRUE) 
+>  source("klsource")
+>  klf<-panel(kldata, qfun.kl, theta.kl, qderivs.kl, 8,3,4,T)
+Iteration[1] 1
+gamma
+[1] -2.3 -2.3 -1.9 -2.3  0.5 -0.5  0.5  0.5
+score at end of iteration
+[1]  1.86352154 -8.36468430  6.81945436 -0.07871706  2.51289920 -0.40759187
+[7]  1.66672234  0.12707842
+[1] "Log Likelihood  -331.412789689976  stepsize  1"
+Iteration[1] 2
+gamma
+[1] -2.17068391 -2.60154201 -1.29910263 -2.25613145  0.71241507 -0.78435552
+[7]  0.23842625  0.04838054
+score at end of iteration
+[1] -0.11351174 -1.03971485 -1.31046959 -0.06350696 -0.21310829 -0.06606145
+[7] -0.23562487  0.03229495
+[1] "Log Likelihood  -331.328272083314  stepsize  1"
+Iteration[1] 3
+gamma
+[1] -2.1768156 -2.6570846 -1.3849695 -2.2465532  0.6974678 -0.7707068  0.2802750
+[8]  0.1095115
+score at end of iteration
+[1]  0.014684469 -0.038553386 -0.053145029  0.001546999  0.017807876
+[6] -0.005781676  0.002095370 -0.010021967
+[1] "Log Likelihood  -331.328107338015  stepsize  1"
+Iteration[1] 4
+gamma
+[1] -2.1771357 -2.6593659 -1.3886484 -2.2458827  0.6995050 -0.7721301  0.2835726
+[8]  0.1107327
+score at end of iteration
+[1]  0.0012419210 -0.0014462954 -0.0015603436  0.0013482173  0.0011679215
+[6]  0.0002538574 -0.0000380643 -0.0006698336
+[1] "Log Likelihood  -331.328107062832  stepsize  1"
+Iteration[1] 5
+gamma
+[1] -2.1771243 -2.6594667 -1.3887354 -2.2457730  0.6995852 -0.7721609  0.2836664
+[8]  0.1107336
+score at end of iteration
+[1]  7.071197e-05 -6.288265e-05 -3.264607e-05  6.092370e-05  7.941852e-05
+[6]  3.141229e-06  2.428624e-05 -6.120920e-07
+ 
+Results at convergence
+----------------------
+Log Likelihood[1] -331.3281
+gamma
+[1] -2.1771243 -2.6594667 -1.3887354 -2.2457730  0.6995852 -0.7721609  0.2836664
+[8]  0.1107336
+Score
+[1]  7.071197e-05 -6.288265e-05 -3.264607e-05  6.092370e-05  7.941852e-05
+[6]  3.141229e-06  2.428624e-05 -6.120920e-07
+stderr(gamma)
+[1] 0.3558131 0.2348009 0.2779059 0.2539200 0.4058809 0.4062616 0.3066859
+[8] 0.3038364
+> 

@@ -1,0 +1,9 @@
+Functions and datasets for fitting models to Panel
+data. These are described in, Gentleman, R.C., Lawless, J.F., Lindsey, J.C.
+and Yan, P (1994).
+Multi--state markov models for analyzing incomplete disease history
+data with illustrations for HIV disease,
+Statistics in Medicine, 13, 805--821.
+Also those models described in Kalbfleisch, J. D. and Lawless J. F. (1985).
+The analysis of panel data under a Markov assumption.
+JASA 89, 863-871.

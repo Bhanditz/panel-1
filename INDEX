@@ -1,0 +1,9 @@
+dclike.panel             A function to compute the value of the log
+                         likelihood for a given set of panel data and a
+                         given value of the parameters.
+eddcmp                   Eigenvalue--eigenvector decomposition.
+kldata                   Simulated panel data from "The analysis of panel
+                         data under a Markov assumption"
+panel                    A function to compute the maximum likelihood
+                         estimates of the transition parameters from
+                         panel data.
