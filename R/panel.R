@@ -1,5 +1,5 @@
 panel<- function(indata, qmatf, gamma, qderivf, npar, nstage, ncov, 
-verbose = F, tol = 0.001)
+verbose = FALSE, tol = 0.001)
 {
 #Copyright 1994 Robert Gentleman
 	stepsize <- 1
@@ -56,7 +56,7 @@ verbose = F, tol = 0.001)
 			print(score)
 		}
 		if(max(abs(score)) < tol) break	#no point in going further
-		rightstep <- F
+		rightstep <- FALSE
 		dir <- solve(info, score)
 		lval1 <- dclike.panel(indata, ainv, amat, evalues, ncov, nstage
 			)
@@ -78,10 +78,10 @@ verbose = F, tol = 0.001)
 			if(obsvd/pred < 0.25)
 				stepsize <- stepsize/2
 			else if(obsvd/pred > 0.75) {
-				rightstep <- T
+				rightstep <- TRUE
 				stepsize <- min(stepsize * 2, 1)
 			}
-			else rightstep <- T
+			else rightstep <- TRUE
 		}
 		if(verbose) {
 			ss <- paste("Log Likelihood ", lval2, " stepsize ", 

@@ -39,7 +39,5 @@ There are no known side effects.
 \seealso{
 panel, eddcmp
 }
-\examples{
-}
 \keyword{utilities}
 

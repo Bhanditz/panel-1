@@ -3,12 +3,10 @@
 \non_function{}
 \title{The data set given in Kalbfleisch and Lawless (1985). }
 \usage{data(kldata)}
-
-}
 \source{
   Kalbfleisch, J.D. and Lawless, J.F. `The analysis
-of panel data under a Markov assumption', {\em Journal of the
-American Statistical Association}, {\bf 80}, 863-871, (1985).
+of panel data under a Markov assumption', Journal of the
+American Statistical Association, 80, 863-871, (1985).
 }
 \description{
 In Section 6 of Kalbfleisch and Lawless (1985) some data simulated from

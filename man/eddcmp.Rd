@@ -25,8 +25,6 @@ a vector containing the eigenvalues
 a vector which contains the imaginary components of the eigenvalues
 if there are any (otherwise this is the zero vector).
 }}
-\examples{
-}
 \section{COMMENTS}{
   The matrix inmat is decomposed as evectors \%*\% diag(evalues) \%*\% solve(evectors).
 For most matrices of interest the eigenvalues will all be real so the imaginary

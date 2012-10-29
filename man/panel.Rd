@@ -9,7 +9,7 @@ The algorithm is discussed in Kalbfleisch and Lawless (1985) and
 further in Gentleman (1994).
 }
 \usage{
-panel(indata, qmatf, gamma, qderivf, npar, nstage, ncov, verbose = F,
+panel(indata, qmatf, gamma, qderivf, npar, nstage, ncov, verbose = FALSE,
         tol = 0.001)
 }
 \arguments{
